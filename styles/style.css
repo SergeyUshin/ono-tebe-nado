@@ -1,1 +1,51 @@
 /* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 92px 49px 96px 51px;
+}
+.header-menu {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.header-menu_list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: circle;
+}
+.point-menu__activ {
+  list-style: none;
+}
+.point-menu__activ .header-menu_link {
+  text-decoration: none;
+}
+.header-menu_link {
+  color: #000;
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 18px;
+}
+.logo {
+  width: 148px;
+  height: 105px;
+}
+.logo-header {
+  display: flex;
+  justify-content: center;
+  grid-column-start: 3;
+}
+.contact-header {
+  display: grid;
+  justify-items: end;
+  grid-column-start: 5;
+}
+.contact-list {
+  color: #000;
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 135%;
+  list-style: none;
+}

@@ -2,7 +2,7 @@
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  padding: 92px 49px 92px 51px;
+  padding: 87px 49px 97px 51px;
 }
 .header-menu {
   display: flex;
@@ -38,6 +38,7 @@
   display: grid;
   justify-items: end;
   grid-column-start: 5;
+  align-self: center;
 }
 .contact address {
   font-style: normal;
@@ -51,6 +52,7 @@
 .cover {
   position: relative;
   z-index: 1;
+  height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,7 +66,8 @@
   background: #000;
 }
 .cover-conteiner {
-  padding: 165px 50px 50px;
+  height: 757px;
+  padding: 180px 50px 35px;
   /*отступы для  cover, мешают 
   позицианированию блока overlay*/
 }
@@ -111,7 +114,7 @@
   word-spacing: 16px;
 }
 .bet-button {
-  margin-left: 78px;
+  margin-left: 89px;
   border: 1px solid #fff;
   padding: 12px 32px;
   color: #fff;
@@ -220,7 +223,6 @@
   flex-direction: column;
   grid-column-start: 2;
   gap: 25px;
-  max-width: 885px;
   font-size: 20px;
 }
 .footer {
@@ -233,7 +235,6 @@
   flex-direction: column;
   align-items: center;
   font-size: 18px;
-
   list-style: none;
 }
 .footer__social-list {
@@ -244,5 +245,5 @@
   list-style: none;
 }
 .footer__social-icon {
-height: 100%;
+  height: 100%;
 }

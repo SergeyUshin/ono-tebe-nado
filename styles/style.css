@@ -1,13 +1,13 @@
 /* место для вашего кода */
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  padding: 87px 49px 97px 51px;
+  grid-template-columns: 1fr min-content 1fr;
+  padding: 80px 50px 100px;
 }
 .header-menu {
   display: flex;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
 }
 .header-menu_list {
   display: flex;
@@ -31,19 +31,20 @@
 }
 .logo-header {
   display: flex;
-  grid-column-start: 3;
+  grid-column-start: 2;
   justify-content: center;
 }
-.contact-header {
+.address-header {
   display: grid;
   justify-items: end;
-  grid-column-start: 5;
+  grid-column-start: 3;
   align-self: center;
 }
-.contact address {
+.address address {
+  width: 240px;
   font-style: normal;
 }
-.contact-list {
+.address-list {
   color: #000;
   font-size: 18px;
   line-height: 135%;
@@ -52,9 +53,9 @@
 .cover {
   position: relative;
   z-index: 1;
-  height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 .overlay {
@@ -66,8 +67,7 @@
   background: #000;
 }
 .cover-conteiner {
-  height: 757px;
-  padding: 180px 50px 35px;
+  padding: 165px 50px 50px;
   /*отступы для  cover, мешают 
   позицианированию блока overlay*/
 }
@@ -82,6 +82,9 @@
 .aligned-text {
   display: flex;
   margin-bottom: 20px;
+}
+.aligned-text:last-child {
+  margin-bottom: 0;
 }
 .letter-spacing-extended {
   letter-spacing: 60px;
@@ -115,7 +118,7 @@
 }
 .bet-button {
   margin-left: 89px;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   padding: 12px 32px;
   color: #fff;
   font-family: Raleway, sans-serif;
@@ -154,12 +157,13 @@
 }
 .card {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  background-position: center;
   background-size: cover;
 }
 .card_type_film {
@@ -172,8 +176,7 @@
   background-image: url(../images/card-lot-03.jpg);
 }
 .card__title {
-  width: 350px;
-  margin-top: 50px;
+  margin: 50px 40px 0;
   color: #fff;
   font-size: 22px;
   line-height: 120%;
@@ -181,8 +184,7 @@
   text-transform: uppercase;
 }
 .card__text {
-  width: 350px;
-  margin-bottom: 50px;
+  margin: 0 40px 50px;
   color: #fff;
   font-weight: normal;
   font-size: 20px;
@@ -240,10 +242,10 @@
 .footer__social-list {
   display: flex;
   justify-content: space-between;
-  width: 240px;
-  height: 48px;
+  gap: 48px;
   list-style: none;
 }
 .footer__social-icon {
-  height: 100%;
+  width: 48px;
+  height: 48px;
 }

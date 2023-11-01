@@ -2,7 +2,7 @@
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  padding: 80px 50px 100px;
+  padding: 90px 50px 95px;
 }
 .header-menu {
   display: flex;
